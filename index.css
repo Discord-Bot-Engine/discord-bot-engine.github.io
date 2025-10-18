@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Inter";
-    src: url("Inter-VariableFont.ttf");
+    src: local('Inter'), url("Inter-VariableFont.ttf");
+    font-display: swap;
 }
 
 * {
