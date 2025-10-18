@@ -66,14 +66,13 @@
     function notify() {
         const email = prompt('Enter your email');
         if(!email) return alert("Please enter a valid email address!");
-        console.log(email)
-        fetch("https://discord.com/api/webhooks/1429004678149968002/l1IY6dgs5vlpcUqRF55N51BJj9D_w2UO6duXaCnTfcBqt2t1yQuokp8QcHAb7_CxF3Qz", {
+        fetch("function-bun-production-ff3c.up.railway.app", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                content: email.trim()
+                email: email.trim()
             })
         })
     }
