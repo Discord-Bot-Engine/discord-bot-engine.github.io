@@ -8,6 +8,10 @@
     font-family: Inter !important;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 h1, h2 {
     color: oklch(0.93 0.01 261.82);
 }
