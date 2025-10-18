@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Inter";
+    src: url("Inter-VariableFont.ttf");
+}
+
+* {
+    font-family: Inter !important;
+}
+
+h1, h2 {
+    color: oklch(0.93 0.01 261.82);
+}
+
+section {
+    padding: 7em 12em;
+}
+
+button {
+    border-radius: 0.7em;
+    padding: 1em 1.2em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#join {
+    color: oklch(0.93 0.01 261.82);
+    background-color: oklch(0.63 0.20 8.73);
+}
+
+body {
+    color: oklch(0.71 0.02 261.33);
+    margin: 0;
+    padding: 0;
+}
+
+/* Sections with dark background */
+#hero,
+#live-debugger,
+#plugin-marketplace {
+    background-color: #111826;
+    display: flex;
+    gap: 3rem;
+}
+
+/* Sections with colored background */
+#no-code-editor,
+#bot-dashboard {
+    background-color: oklch(0.27 0.03 259.08);
+    display: flex;
+    gap: 3rem;
+}
+
+/* Images */
+#logo {
+    max-width: 256px;
+    max-height: 256px;
+}
+
+#editor,
+#debugger,
+#dashboard,
+#plugins {
+    max-height: 320px;
+    max-width: 512px;
+    border: 2px solid oklch(0.27 0.03 259.08);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    #hero {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    #no-code-editor,
+    #live-debugger,
+    #bot-dashboard,
+    #plugin-marketplace {
+        display: flex;
+        flex-direction: column;
+    }
+}
