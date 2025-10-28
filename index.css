@@ -39,11 +39,6 @@ button {
     outline: none;
 }
 
-#join {
-    color: oklch(0.93 0.01 261.82);
-    background-color: oklch(0.63 0.20 8.73);
-}
-
 /* Images */
 #editor, #debugger, #dashboard, #plugins {
     max-width: 512px;
